@@ -117,9 +117,17 @@ $(document).ready(function() {
 	});
 	$('.header-search-btn').click(function(event) {
 		$('.header-search').css('animation', 'HideToTop 1s ease forwards');
+		$('.header-search-result').css('animation', 'HideToBottom 1s ease forwards');
 		setTimeout(function(){
 			$('.header-search').css('display', 'none');
+			$('.header-search-result').css('display', 'none');
 		}, 1000);
+	});
+
+	$('.header-search form').submit(function(event) {
+		event.preventDefault();
+		$('.header-search-result').css('display', 'block');
+		$('.header-search-result').css('animation', 'Drop 1s ease forwards');
 	});
 
 });

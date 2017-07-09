@@ -223,6 +223,17 @@ a {
   }
 }
 
+@keyframes HideToBottom {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(2000px);
+    opacity: 0;
+  }
+}
+
 @keyframes Right {
   from {
     transform: translateX(1000px);

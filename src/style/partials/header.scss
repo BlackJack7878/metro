@@ -15,6 +15,59 @@
 		display: none;
 		opacity: 0;
 
+		&-result {
+			position: fixed;
+			top: 100px;
+			left: 0;
+			right: -20px;
+			bottom: 0;
+			background-color: rgba(36,47,58, 0.95);
+			z-index: 500;
+			padding-bottom: 30px;
+			display: none;
+			overflow-y: scroll;
+			opacity: 0;
+
+			ul {
+				max-width: 1040px;
+			}
+
+			li {
+				margin-top: 20px;
+				text-align: left;
+				max-width: 930px;
+			}
+
+			&-tag {
+				font-family: $GothamBold;
+				color: white;
+				font-size: 12px;
+				margin-bottom: 15px;
+				margin-top: 50px;
+				text-transform: uppercase;
+			}
+
+			&-name {
+				display: block;
+				font-size: 30px;
+				line-height: 35px;
+				color: white;
+				font-family: $GothamLight;
+				line-height: 35px;
+				margin-top: 15px;
+				margin-bottom: 0;
+				padding-left: 0;
+				cursor: pointer;
+				transition: all 0.3s ease;
+
+				&:hover {
+					padding-left: 10px;
+					color: $gold;
+				}
+			}
+
+		}
+
 		&-btn {
 			width: 80px;
 			height: 100px;
@@ -24,6 +77,8 @@
 			align-items: center;
 			flex-direction: column;
 			cursor: pointer;
+			position: relative;
+			z-index: 10;
 
 			&-bar {
 				width: 30px;
@@ -50,6 +105,7 @@
 			padding-left: 80px;
 			border-bottom: 1px solid black;
 			position: relative;
+			z-index: 9;
 
 			& button {
 				content: '';
