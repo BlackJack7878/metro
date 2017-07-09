@@ -111,4 +111,15 @@ $(document).ready(function() {
 
 	});
 
+	$('.header-contact-search-icon').click(function(event) {
+		$('.header-search').css('display', 'block');
+		$('.header-search').css('animation', 'Drop 1s ease forwards');
+	});
+	$('.header-search-btn').click(function(event) {
+		$('.header-search').css('animation', 'HideToTop 1s ease forwards');
+		setTimeout(function(){
+			$('.header-search').css('display', 'none');
+		}, 1000);
+	});
+
 });

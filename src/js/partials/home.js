@@ -4,7 +4,11 @@ $(document).ready(function() {
 		autoplay: true,
 		infinite: true,
 		delay: 5000,
-		arrows: false
+		arrows: {
+			//  Unslider arrows
+			prev: '<a class="unslider-arrow prev"></a>',
+			next: '<a class="unslider-arrow next"></a>',
+		}
 	});
 
 	$('#main-bank-slider').unslider({
@@ -18,6 +22,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$()
+	if ($(window).width() <= 600) {
+		$('.footer-up-wrapper').insertAfter('.content-form');
+	}
 
 });

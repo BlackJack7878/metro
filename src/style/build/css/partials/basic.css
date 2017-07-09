@@ -152,6 +152,14 @@ a {
     transform: translateX(-1000px);
     opacity: 0; } }
 
+@keyframes HideToTop {
+  from {
+    transform: translateY(0px);
+    opacity: 1; }
+  to {
+    transform: translateY(-200px);
+    opacity: 0; } }
+
 @keyframes Right {
   from {
     transform: translateX(1000px);

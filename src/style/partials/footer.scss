@@ -178,3 +178,122 @@
 	}
 
 }
+
+@media (max-width: 1000px) {
+	.footer-up {
+		right: 10px;
+	}
+}
+
+@media (max-width: 900px) {
+	.footer {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 770px) {
+	.footer {
+		
+		&-form {
+			text-align: center;
+
+			&-head {
+				font-size: 29px;
+			}
+
+			&-row {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			& input {
+				margin-top: 20px;
+			}
+
+			& button {
+				margin-top: 50px;
+			}
+		}
+
+		&-wrapper-2 {
+
+			& .content {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+		}
+
+		&-contact {
+
+			&-col {
+				width: 60%;
+				&-2 {
+					margin-top: 20px;
+				}
+			}
+
+			&-head {
+				text-align: center;
+				font-size: 23px;
+			}
+
+			&-email {
+				text-align: center;
+				font-size: 17px;
+				padding-left: 0;
+			}
+
+		}
+
+		&-wrapper-3 {
+
+			& .content {
+				flex-direction: column;
+				text-align: left;
+				padding-top: 15px;
+			}
+		}
+
+		&-madeby {
+			margin-top: 0;
+			width: 70px;
+			margin-bottom: 20px;
+			padding-right: 88px;
+		}
+
+	}
+}
+
+@media (max-width: 600px) {
+	.footer {
+
+		&-contact {
+
+			&-col {
+				width: 80%;
+			}
+
+			&-email {
+				text-align: center;
+				font-size: 17px;
+				padding-left: 10px;
+			}
+
+		}
+
+		&-up {
+			right: 20px;
+			top: -30px;
+
+			&:hover, &:focus, &:active {
+				padding-bottom: 0px;
+				top: -30px;
+				background-position: center;
+			}
+		}
+
+	}
+}
