@@ -1,0 +1,180 @@
+.footer {
+	margin-top: 50px;
+	opacity: 0;
+
+	&-up-wrapper {
+		position: relative;
+	}
+
+	&-up {
+		background-color: $gold;
+		width: 37px;
+		height: 37px;
+		background-image: url('../img/footer/up.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
+		position: absolute;
+		top: -67px;
+		right: -16px;
+		cursor: pointer;
+		padding-bottom: 0;
+		transition: all 0.3s ease;
+
+		&:hover, &:focus, &:active {
+			padding-bottom: 10px;
+			top: -77px;
+			background-position: center 17px;
+		}
+	}
+
+	&-wrapper {
+		background-color: black;
+		padding-bottom: 20px;
+		padding-top: 30px;
+
+		& .content-form {
+			position: relative;
+			max-width: 760px;
+		}
+	}
+
+	&-form {
+		text-align: right;
+
+		&-head {
+			color: white;
+			font-size: 29px;
+			font-family: $GothamLight;
+			margin-top: 0;
+		}
+
+		&-row {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		& input {
+			font-size: 13px;
+			padding: 10px 0;
+			border-style: none;
+			border-bottom: 1px solid $gold;
+			color: white;
+			background-color: black;
+			max-width: 330px;
+			width: 100%;
+			outline: none;
+			margin-top: 15px;
+
+			&::placeholder {
+				color: white;
+			}
+		}
+
+		& button {
+			color: $gold;
+			border-color: $gold;
+			background-color: transparent;
+			cursor: pointer;
+			z-index: 1;
+			position: relative;
+
+			&:after, &:before {
+				background-color: $gold;
+			}
+		}
+
+	}
+
+	&-wrapper-2 {
+		background-color: #c09b56;
+		padding-top: 32px;
+		padding-bottom: 25px;
+
+		& .content {
+			max-width: 760px;
+			display: flex;
+		} 
+	}
+
+	&-contact {
+
+		&-head {
+			font-family: $GothamBook;
+			font-size: 21px;
+			color: white;
+			margin-top: 0;
+		}
+
+		&-col {
+			width: 55%;
+			color: white;
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+			&-2 {
+				text-align: right;
+				width: 45%;
+			}
+		}
+
+		&-row {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&-email {
+			font-family: $GothamLight;
+			font-size: 16px;
+			text-decoration: underline;
+			padding-left: 45px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			background-image: url('../img/footer/contact-icon.png');
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+
+		&-city {
+			font-family: $GothamBold;
+			font-size: 16px;
+			line-height: 27px;
+		}
+
+		&-phone {
+			font-family: $GothamLight;
+			position: relative;
+			top: 5px;
+		}
+
+	}
+
+	&-wrapper-3 {
+		background-color: white;
+
+		& .content {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&-copyright {
+		color: #626262;
+		font-size: 14px;
+		font-family: $GothamBook;
+	}
+
+	&-madeby {
+		color: #626262;
+		font-size: 14px;
+		font-family: $GothamBook; 
+		padding-right: 94px;
+		background-image: url('../img/footer/madeby.png');
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+}

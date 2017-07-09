@@ -1,0 +1,205 @@
+.bold {
+  font-weight: 700; }
+
+.gold {
+  color: #c09b56; }
+
+body {
+  min-width: 480px;
+  overflow-x: hidden;
+  letter-spacing: 0.25px; }
+
+ul, li, body, a, img {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center; }
+
+.btn {
+  font-size: 14px;
+  font-family: "Gotham-Light";
+  color: white;
+  padding: 20px 32px;
+  border: 1px solid white;
+  transition: all 0.3s ease, top 0s linear;
+  position: relative;
+  display: inline-block; }
+  .btn:before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.6s ease; }
+  .btn:hover, .btn:focus, .btn:active {
+    padding-left: 42px;
+    padding-right: 22px;
+    color: black; }
+    .btn:hover:before, .btn:focus:before, .btn:active:before {
+      width: 100%; }
+
+.btn-anim {
+  font-size: 14px;
+  font-family: "Gotham-Light";
+  padding: 20px 32px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease, top 0s linear; }
+  .btn-anim:before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.6s ease; }
+  .btn-anim:hover, .btn-anim:focus, .btn-anim:active {
+    padding-left: 42px;
+    padding-right: 22px;
+    color: black; }
+    .btn-anim:hover:before, .btn-anim:focus:before, .btn-anim:active:before {
+      width: 100%; }
+  .btn-anim-vertical-1 {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background-color: white;
+    display: block; }
+  .btn-anim-vertical-2 {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    width: 1px;
+    background-color: white;
+    display: block; }
+  .btn-anim-horizontal-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    height: 1px;
+    background-color: white;
+    display: block; }
+  .btn-anim-horizontal-2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    height: 1px;
+    background-color: white;
+    display: block; }
+
+@keyframes Drop {
+  from {
+    transform: translateY(-200px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes Apear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes Under {
+  from {
+    transform: translateY(600px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes UnderLittle {
+  from {
+    transform: translateY(200px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes Left {
+  from {
+    transform: translateX(-1000px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes HideToLeft {
+  from {
+    transform: translateY(0px);
+    opacity: 1; }
+  to {
+    transform: translateX(-1000px);
+    opacity: 0; } }
+
+@keyframes Right {
+  from {
+    transform: translateX(1000px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes Rotate {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0; }
+  to {
+    transform: rorateY(0deg);
+    opacity: 1; } }
+
+@keyframes HorizontalTop {
+  from {
+    right: 100%; }
+  to {
+    right: 0%; } }
+
+@keyframes HorizontalBottom {
+  from {
+    left: 100%; }
+  to {
+    left: 0%; } }
+
+@keyframes VerticalRight {
+  from {
+    bottom: 100%; }
+  to {
+    bottom: 0%; } }
+
+@keyframes VerticalLeft {
+  from {
+    top: 100%; }
+  to {
+    top: 0%; } }
+
+@font-face {
+  font-family: Gotham-Light;
+  src: local("Gotham-Light"), url(../fonts/Gotham-Light.otf); }
+
+@font-face {
+  font-family: Gotham-Bold;
+  src: local("Gotham-Bold"), url(../fonts/Gotham-Bold.otf); }
+
+@font-face {
+  font-family: Gotham-Book;
+  src: local("Gotham-Book"), url(../fonts/Gotham-Book.otf); }

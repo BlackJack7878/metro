@@ -1,0 +1,28 @@
+.main-head {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .main-head-content {
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100; }
+  .main-head-slider {
+    z-index: 50; }
+    .main-head-slider-single {
+      overflow: hidden;
+      position: relative;
+      height: 800px; }
+      .main-head-slider-single img {
+        min-height: 100%;
+        height: auto;
+        min-width: 100%;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        display: block; }
