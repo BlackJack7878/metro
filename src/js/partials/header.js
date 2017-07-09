@@ -51,12 +51,21 @@ $(document).ready(function() {
 
 	$('.header-menu-item-drop').click(function(event) {
 		if (!$(this).hasClass('open')) {
-			$('.header-menu-item-drop').removeClass('open');
+			$('.header-menu-item-drop').each(function(index, el) {
+				$(this).removeClass('open');				
+			});
 			$(this).addClass('open');
 			$('.header-menu-dropdown').each(function(index, el) {
 				$(this).css('display', 'none');
 			});
-			$(this).find('.header-menu-dropdown').css('display', 'flex');
+			if ($(window).width() > 550) {
+				$(this).find('.header-menu-dropdown').css('display', 'flex');
+				$(this).find('.header-menu-dropdown').css('display', '-webkit-flex');
+				$(this).find('.header-menu-dropdown').css('display', '-ms-flexbox');
+			}
+			else {
+				$(this).find('.header-menu-dropdown').css('display', 'block');
+			}
 			$(this).find('.header-menu-dropdown').css('animation', 'Left 1s ease forwards');
 		}
 		else {

@@ -14,7 +14,7 @@ $gold: #c09b56;
 
 body {
 	min-width: 480px;
-  overflow-x: hidden;
+  // overflow-y: hidden;
 	letter-spacing: 0.25px;
 }
 
@@ -44,7 +44,7 @@ a {
   color: white;
   padding: 20px 32px;
   border: 1px solid white;
-  transition: all 0.3s ease, top 0s linear;
+  transition: all 0.3s ease, top none;
   position: relative;
   display: inline-block;
 
@@ -79,7 +79,7 @@ a {
   padding: 20px 32px;
   position: relative;
   display: inline-block;
-  transition: all 0.3s ease, top 0s linear;
+  transition: all 0.3s ease, top none;
 
   &:before {
     content: '';
@@ -180,11 +180,11 @@ a {
 }
 
 @keyframes UnderLittle {
-  from {
+  0% {
     transform: translateY(200px);
     opacity: 0;
   }
-  to {
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }

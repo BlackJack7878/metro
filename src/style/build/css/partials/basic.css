@@ -6,7 +6,6 @@
 
 body {
   min-width: 480px;
-  overflow-x: hidden;
   letter-spacing: 0.25px; }
 
 ul, li, body, a, img {
@@ -30,7 +29,7 @@ a {
   color: white;
   padding: 20px 32px;
   border: 1px solid white;
-  transition: all 0.3s ease, top 0s linear;
+  transition: all 0.3s ease, top none;
   position: relative;
   display: inline-block; }
   .btn:before {
@@ -56,7 +55,7 @@ a {
   padding: 20px 32px;
   position: relative;
   display: inline-block;
-  transition: all 0.3s ease, top 0s linear; }
+  transition: all 0.3s ease, top none; }
   .btn-anim:before {
     content: '';
     top: 0;
@@ -129,10 +128,10 @@ a {
     opacity: 1; } }
 
 @keyframes UnderLittle {
-  from {
+  0% {
     transform: translateY(200px);
     opacity: 0; }
-  to {
+  100% {
     transform: translateY(0px);
     opacity: 1; } }
 

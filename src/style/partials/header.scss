@@ -202,6 +202,7 @@
 
 	&-menu {
 		display: none;
+		overflow-y: auto;
 
 		&-dropdown {
 			max-width: 800px;
@@ -338,8 +339,8 @@
 
 		&-item {
 			color: white;
-			font-size: 57px;
-			line-height: 69px;
+			font-size: 55px;
+			line-height: 66px;
 			font-family: $GothamBook;
 			padding-left: 0;
 			transition: all 0.4s ease;
@@ -365,7 +366,7 @@
 		}
 
 		&-list {
-			padding-top: 180px;
+			padding-top: 160px;
 			padding-left: 200px;
 		}
 
@@ -560,6 +561,20 @@
 	.header {
 
 		&-menu {
+
+			&-dropdown {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				&-item {
+					width: 100%;
+					text-align: left;
+				}
+			}
 
 			&-list {
 				padding-top: 130px;

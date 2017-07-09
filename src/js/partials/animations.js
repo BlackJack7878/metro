@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$(window).scroll(function(event) {
 			var top = $(this).scrollTop();
 			$('.main-head-text').css('top', (-(top * 0.06 - 0)*6) + 'px');
-			$('.main-head-btn').css('top', (-(top * 0.06 - 0)*5) + 'px');
+			$('.main-head-btn').css('top', (-(top * 0.06 - 0)*6) + 'px');
 
 			$('.main-oferta-header').css('top', (-(top * 0.06 - 60)*3) + 'px');
 			$('.main-oferta-image').css('top', (-(top * 0.06 - 70)*5) + 'px');
@@ -43,7 +43,7 @@ $(document).ready(function() {
 				$('.btn-anim-horizontal-2', this).css('animation', 'HorizontalBottom 0.5s 1s forwards');
 				$('.btn-anim-vertical-1', this).css('animation', 'VerticalLeft 0.5s 1.5s forwards');
 			});
-		}, {offset: '90%'});
+		}, {offset: '120%'});
 
 		$('.footer').waypoint(function(e, direction){
 			$(this['element']).each(function(index, el) {

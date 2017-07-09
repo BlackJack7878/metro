@@ -81,6 +81,7 @@
 		position: absolute;
 		width: 150px;
 		height: 150px;
+		top: 190px;
 		left: -60px;
 		z-index: 100;
 	}
@@ -92,7 +93,7 @@
 		height: 430px;
 		position: relative;
 		float: left;
-		top: 100px;
+		top: 255px;
 		z-index: 10;
 
 		& img {
@@ -115,7 +116,7 @@
 		line-height: 68px;
 		z-index: 20;
 		position: absolute;
-		top: 70px;
+		top: 160px;
 		right: 20px;
 		max-width: 508px;
 		width: 100%;
@@ -127,7 +128,7 @@
 		padding: 40px 50px;
 		z-index: 30;
 		position: absolute;
-		top: 200px;
+		top: 415px;
 		right: 20px;
 		max-width: 420px;
 		width: 100%;
@@ -333,7 +334,7 @@
 		top: 50%;
 		left: 20px;
 		transform: translateY(-57px);
-		transition: all 0.4s ease, top 0s linear;
+		transition: all 0.4s ease, top none;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url('../img/body/arrow-left.png');
@@ -388,6 +389,7 @@
 		z-index: 50;
 		padding-top: 0px;
 		padding-bottom: 50px;
+		min-height: 780px;
 
 		&-wrapper {
 			padding-top: 250px;
@@ -448,6 +450,8 @@
 		left: 60px;
 		width: 226px;
 		height: 16px;
+		z-index: 11;
+		background-color: rgba(255,255,255,0.1);
 
 		color: $gold;
 		&:before, &:after {
@@ -491,7 +495,7 @@
 		position: absolute;
 		left: 500px;
 		transform: translateY(-57px);
-		transition: all 0.4s ease, top 0s linear;
+		transition: all 0.4s ease, top none;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url('../img/body/arrow-left.png');
@@ -510,6 +514,21 @@
 		}
 	}
 
+	& .unslider {
+		&:after {
+			clear: both;
+			content: '.';
+			display: block;
+			visibility: hidden;
+		}
+	}
+
+}
+
+@media (max-width: 1250px) {
+	.main-invest-N {
+		right: 10px;
+	}
 }
 
 @media (max-width: 990px) {
@@ -577,6 +596,7 @@
 		&-slide {
 			position: relative;
 			z-index: 50;
+			min-height: auto;
 			padding-top: 50px;
 			padding-bottom: 200px !important;
 
@@ -808,6 +828,7 @@
 			z-index: 50;
 			padding-top: 50px;
 			padding-bottom: 200px !important;
+			min-height: 100%;
 
 			&-wrapper {
 				padding-top: 0px;
