@@ -10,6 +10,7 @@
 		height: 100px;
 		z-index: 400;
 		left: 0;
+		top: 0;
 		right: 100px;
 		position: absolute;
 		display: none;
@@ -56,12 +57,13 @@
 				line-height: 35px;
 				margin-top: 15px;
 				margin-bottom: 0;
-				padding-left: 0;
 				cursor: pointer;
 				transition: all 0.3s ease;
+				position: relative;
+				left: 0;
 
 				&:hover {
-					padding-left: 10px;
+					left: 10px;
 					color: $gold;
 				}
 			}
@@ -125,6 +127,7 @@
 		}
 
 		& input {
+			height: 70px;
 			color: white;
 			background-color: $gold;
 			border-style: none;
@@ -172,6 +175,7 @@
 		align-items: center;
 		cursor: pointer;
 		z-index: 2;
+		position: relative;
 		transition: all 0.4s ease;
 		opacity: 0;
 
@@ -240,6 +244,7 @@
 			background-color: white;
 			cursor: pointer;
 			z-index: 2;
+			position: relative;
 			transition: all 0.4s ease;
 			opacity: 0;
 

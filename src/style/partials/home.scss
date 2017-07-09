@@ -153,6 +153,8 @@
 }
 
 .main-invest {
+	position: relative;
+	z-index: 2;
 	margin-top: 70px;
 
 	&-wrapper {
@@ -338,6 +340,9 @@
 }
 
 .main-bank {
+	position: relative;
+	top: -150px;
+	z-index: 1;
 
 	& .content {
 		// overflow-x: hidden;
@@ -354,15 +359,15 @@
 		top: -20px;
 	}
 
-	& .unslider-clone {
-		visibility: hidden;
-	}
-
 	&-slide {
 		position: relative;
 		z-index: 50;
-		padding-top: 50px;
+		padding-top: 0px;
 		padding-bottom: 50px;
+
+		&-wrapper {
+			padding-top: 250px;
+		}
 	}
 
 	&-block {
@@ -656,6 +661,7 @@
 
 	.main-bank {
 		margin-top: 20px;
+		top: 0;
 
 		& .content {
 			padding: 0;
@@ -681,6 +687,10 @@
 			z-index: 50;
 			padding-top: 50px;
 			padding-bottom: 200px !important;
+
+			&-wrapper {
+				padding-top: 0px;
+			}
 		}
 
 		&-block {

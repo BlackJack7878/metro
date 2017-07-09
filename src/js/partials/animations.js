@@ -25,12 +25,12 @@ $(document).ready(function() {
 			$('.main-invest-column-2').css('top', (-(top * 0.06 - 60)*9) + 'px');
 			$('.main-invest-column-3').css('top', (-(top * 0.06 - 60)*5) + 'px');
 
-			$('.main-bank-header').css('top', (-(top * 0.06 - 70)*3) + 'px');
+			$('.main-bank-header').css('top', (-(top * 0.06 - 155)*3) + 'px');
 			$('.main-bank-image').css('top', (-(top * 0.06 - 100)*5) + 'px');
-			$('.main-bank-block').css('top', (-(top * 0.06 - 125)*9) + 'px');
-			$('.main-bank-btn').css('top', (-(top * 0.06 - 167)*9) + 'px');
-			$('.main-bank .next').css('top', (-(top * 0.06 - 442)*9) + 'px');
-			$('.main-bank .prev').css('top', (-(top * 0.06 - 442)*9) + 'px');
+			$('.main-bank-block').css('top', (-(top * 0.06 - 155)*9) + 'px');
+			$('.main-bank-btn').css('top', (-(top * 0.06 - 196)*9) + 'px');
+			$('.main-bank .next').css('top', (-(top * 0.06 - 202.5)*9) + 'px');
+			$('.main-bank .prev').css('top', (-(top * 0.06 - 202.5)*9) + 'px');
 		});
 
 		$('.btn-anim').waypoint(function(e, direction){
