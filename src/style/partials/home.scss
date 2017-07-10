@@ -358,7 +358,7 @@
 
 .main-bank {
 	position: relative;
-	top: -150px;
+	top: -110px;
 	z-index: 1;
 
 	& .content {
@@ -392,7 +392,7 @@
 		min-height: 780px;
 
 		&-wrapper {
-			padding-top: 250px;
+			padding-top: 200px;
 		}
 	}
 
@@ -450,7 +450,7 @@
 		left: 60px;
 		width: 226px;
 		height: 16px;
-		z-index: 11;
+		z-index: 100;
 		background-color: rgba(255,255,255,0.1);
 
 		color: $gold;
@@ -486,6 +486,11 @@
 			display: block;
 		}
 	}
+
+	.unslider-nav {
+		display: none;
+	}
+
 	.unslider-arrow {
 		z-index: 100;
 		background-color: rgba(255,255,255,0.7);
@@ -548,8 +553,23 @@
 
 @media (max-width: 900px) { 
 
-	.main-oferta-btn {
-		border: 1px solid white;
+	.main-oferta {
+
+		&-header {
+			top: 0;
+		}
+
+		&-block {
+			top: 150px;
+		}
+
+		&-image {
+			top: 190px;
+		}
+
+		&-btn {
+			border: 1px solid white;
+		}
 	}
 
 	.main-invest-btn {
@@ -869,7 +889,7 @@
 
 		&-btn {
 			position: absolute;
-			bottom: 0;
+			bottom: 10px;
 			left: 50%;
 			margin-left: -134px;
 			width: 226px;
@@ -938,8 +958,110 @@
 		}
 
 		&-slide {
-			padding-bottom: 280px !important;
+			padding-bottom: 260px !important;
 		}
 
 	}
+}
+
+@media (max-width: 380px) {
+	.btn, .btn-anim {
+		font-size: 12px;
+		padding: 12px 20px;
+	}
+
+	.main-head {
+		height: 600px;
+
+		&-overlay {
+			padding-top: 170px;
+		}
+
+		&-text {
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		&-slider {
+
+			&-single {
+				height: 600px;
+			}
+
+		}
+
+	}
+
+	.main-oferta {
+
+		&-block {
+		}
+
+		&-text {
+			font-size: 14px;
+			line-height: 30px;
+		}
+
+	}
+
+	.main-invest {
+
+		& .next, & .prev {
+			width: 50px;
+			height: 50px;
+			transform: translateY(-25px);
+
+			&:hover, &:active, &:focus {
+				background-position: center !important;
+			}
+		}
+
+		&-text {
+			font-size: 14px;
+			line-height: 30px;
+		}
+
+		&-slider {
+
+			&-desc {
+				left: 20px;
+				right: 20px;
+			}
+
+			&-name {
+				font-size: 15px;
+			}
+
+			&-invest {
+				font-size: 10px;
+			}
+		}
+
+	}
+
+	.main-bank {
+
+		& .next, & .prev {
+			height: 50px;
+			width: 50px;
+			transform: translateY(-25px);
+
+			&:hover, &:active, &:focus {
+				background-position: center !important;
+			}
+		}
+
+		&-block {
+			padding: 0 20px 20px;
+			&-name {
+				font-size: 14px;
+				line-height: 25px;
+			}
+			&-text {
+				font-size: 14px;
+				line-height: 25px;
+			}
+		}
+	}
+
 }

@@ -122,15 +122,15 @@ $(document).ready(function() {
 
 	$('.header-contact-search-icon').click(function(event) {
 		$('.header-search').css('display', 'block');
-		$('.header-search').css('animation', 'Drop 1s ease forwards');
+		$('.header-search').css('animation', 'Right 1s ease forwards');
+		$('.header-contact-search, .header-contact-client').css('display', 'none');
 	});
 	$('.header-search-btn').click(function(event) {
-		$('.header-search').css('animation', 'HideToTop 1s ease forwards');
+		$('.header-search').css('animation', 'HideToRight 1s ease forwards');
 		$('.header-search-result').css('animation', 'HideToBottom 1s ease forwards');
-		setTimeout(function(){
-			$('.header-search').css('display', 'none');
-			$('.header-search-result').css('display', 'none');
-		}, 1000);
+		$('.header-contact-search, .header-contact-client').css('display', 'flex');
+		$('.header-contact-search, .header-contact-client').css('display', '-webkit-flex');
+		$('.header-contact-search, .header-contact-client').css('display', '-ms-flex');
 	});
 
 	$('.header-search form').submit(function(event) {

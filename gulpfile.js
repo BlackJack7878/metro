@@ -58,7 +58,7 @@ gulp.task('html:build', function () {
 gulp.task('js:build', function () {
     gulp.src(path.src.js)
         .pipe(rigger())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
 });
@@ -68,7 +68,7 @@ gulp.task('style:build', function () {
 
         .pipe(sass({includePaths: ['./styles']}))
         .pipe(prefixer())
-        .pipe(cssmin())
+        // .pipe(cssmin())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });

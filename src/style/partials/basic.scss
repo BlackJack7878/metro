@@ -13,7 +13,7 @@ $gold: #c09b56;
 }
 
 body {
-	min-width: 480px;
+	min-width: 300px;
   // overflow-y: hidden;
 	letter-spacing: 0.25px;
 }
@@ -208,6 +208,17 @@ a {
   }
   to {
     transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes HideToRight {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(1000px);
     opacity: 0;
   }
 }

@@ -162,6 +162,7 @@
 		&-right {
 			display: flex;
 			float: right;
+			z-index: 450;
 		}
 
 	}
@@ -593,6 +594,37 @@
 				&-item {
 					font-size: 14px;
 				}
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 380px) {
+
+	.header {
+
+		&-menu {
+
+			&-lang {
+				margin-top: 20px;
+				margin-right: 0;
+			}
+
+			&-lang-container {
+				right: 20px;
+				width: 42px;
+				top: 0;
+			}
+
+			&-item {
+				font-size: 20px;
+			}
+
+			&-dropdown-item {
+				font-size: 13px;
 			}
 
 		}

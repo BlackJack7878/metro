@@ -58,7 +58,7 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop:$('#' + target).position().top}, 2000);
 	});
 
-	if ($(window).width() > 770) {
+	if ($(window).width() > 600) {
 		new Vivus('my-svg-O', {
 			type: 'delayed',
 			duration: 120,

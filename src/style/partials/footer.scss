@@ -1,5 +1,5 @@
 .footer {
-	margin-top: 50px;
+	margin-top: 10px;
 	opacity: 0;
 
 	&-up-wrapper {
@@ -270,6 +270,7 @@
 
 @media (max-width: 600px) {
 	.footer {
+		margin-top: 10px;
 
 		&-contact {
 
@@ -294,6 +295,65 @@
 				top: -30px;
 				background-position: center;
 			}
+		}
+
+	}
+}
+
+
+@media (max-width: 450px) {
+	.footer {
+		&-contact {
+
+			&-email {
+				background-image: none;
+				padding-left: 0px;
+			}
+
+			&-city, &-phone {
+				font-size: 14px;
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 380px) {
+	.footer {
+
+		&-up {
+			top: -37px;
+		}
+
+		&-form-head {
+			font-size: 20px;
+		}
+
+		&-contact {
+
+			&-head {
+				font-size: 18px;
+			}
+
+			&-email {
+				font-size: 15px;
+			}
+
+			&-city, &-phone {
+				font-size: 13px;
+			}
+
+			&-col {
+				width: 100%;
+			}
+			
+		}
+
+
+		&-copyright, &-madeby {
+			font-size: 12px;
+			text-align: left;
 		}
 
 	}
