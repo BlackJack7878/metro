@@ -6,3 +6,4 @@
 //= partials/animations.js
 //= partials/header.js
 //= partials/home.js
+//= partials/blog.js

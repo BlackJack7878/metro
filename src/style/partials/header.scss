@@ -404,7 +404,7 @@
 		&-client {
 			color: white;
 			font-family: $GothamLight;
-			font-style: 12px;
+			font-size: 12px;
 			display: flex;
 			align-items: center;
 			padding: 0 20px;
@@ -450,11 +450,11 @@
 
 		&-us {
 			position: absolute;
-			right: -35px;
+			right: -15px;
 			top: 190px;
 			color: white;
 			font-family: $GothamLight;
-			font-style: 12px;
+			font-size: 12px;
 			transform: rotate(90deg);
 			transition: all 0.2s ease;
 			opacity: 0;
@@ -464,7 +464,7 @@
 				width: 26px;
 				height: 1px;
 				background-color: white;
-				top: 9px;
+				top: 6px;
 				right: -34px;
 				position: absolute;
 				transition: all 0.2s ease;

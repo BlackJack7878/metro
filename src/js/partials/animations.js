@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+	$('.footer-up').click(function(event){
+		event.preventDefault();
+		var target = $(this).attr('to');
+		$('html, body').animate({scrollTop:$('#' + target).position().top}, 2000);
+	});
 	
 	$('.header-menu-btn').css('animation', 'Drop 1s ease 0.3s forwards');
 	$('.header-logo').css('animation', 'Drop 1s ease 0.5s forwards');
@@ -11,8 +17,13 @@ $(document).ready(function() {
 	$('.main-head-btn').css('animation', 'Under 1s ease 1.5s forwards');
 
 	if ($(window).width() > 900) {
+		$.getScript('../js/skrollr.min.js', function(data, textStatus) {
+			var s = skrollr.init();
+		});
+
 		$(window).scroll(function(event) {
 			var top = $(this).scrollTop();
+			// Home page animations
 			$('.main-head-text').css('top', (-(top * 0.06 - 0)*6) + 'px');
 			$('.main-head-btn').css('top', (-(top * 0.06 - 0)*6) + 'px');
 
@@ -34,6 +45,13 @@ $(document).ready(function() {
 			$('.main-bank .next').css('top', (-(top * 0.06 - 202.5)*9) + 'px');
 			$('.main-bank .prev').css('top', (-(top * 0.06 - 202.5)*9) + 'px');
 			$('.main-bank-B').css('top', (-(top * 0.06 - 155)*5) + 'px');
+
+			// Blog page animations
+			$('.blog-article-main .blog-article-image').css('top', (-(top * 0.06 - 25)*5) + 'px');
+			$('.blog-article-main .blog-article-head').css('top', (-(top * 0.06 - 25)*2) + 'px');
+			$('.blog-article-main .blog-article-date').css('top', (-(top * 0.06 - 25)*2) + 'px');
+			$('.blog-article-main .blog-article-text').css('top', (-(top * 0.06 - 25)*3) + 'px');
+			$('.blog-list-top-banner').css('top', (-(top * 0.06 - 25)*3) + 'px');
 		});
 
 		$('.btn-anim').waypoint(function(e, direction){
@@ -52,28 +70,24 @@ $(document).ready(function() {
 		}, {offset: '90%'});
 	}
 
-	$('.footer-up').click(function(event){
-		event.preventDefault();
-		var target = $(this).attr('to');
-		$('html, body').animate({scrollTop:$('#' + target).position().top}, 2000);
-	});
-
 	if ($(window).width() > 600) {
-		new Vivus('my-svg-O', {
-			type: 'delayed',
-			duration: 120,
-			animTimingFunction: Vivus.EASE
-		});
-		new Vivus('my-svg-N', {
-			type: 'delayed',
-			duration: 120,
-			animTimingFunction: Vivus.EASE
-		});
-		new Vivus('my-svg-B', {
-			type: 'delayed',
-			duration: 120,
-			animTimingFunction: Vivus.EASE
-		});
+		if ($('#my-svg-O').length) {
+			new Vivus('my-svg-O', {
+				type: 'delayed',
+				duration: 120,
+				animTimingFunction: Vivus.EASE
+			});
+			new Vivus('my-svg-N', {
+				type: 'delayed',
+				duration: 120,
+				animTimingFunction: Vivus.EASE
+			});
+			new Vivus('my-svg-B', {
+				type: 'delayed',
+				duration: 120,
+				animTimingFunction: Vivus.EASE
+			});
+		}
 	}
 
 });

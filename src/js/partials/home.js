@@ -22,8 +22,4 @@ $(document).ready(function() {
 		}
 	});
 
-	if ($(window).width() <= 600) {
-		$('.footer-up-wrapper').insertAfter('.content-form');
-	}
-
 });

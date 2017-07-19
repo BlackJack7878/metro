@@ -44,7 +44,7 @@ a {
   color: white;
   padding: 20px 32px;
   border: 1px solid white;
-  transition: all 0.3s ease, top none;
+  transition: all 0.3s ease, top linear;
   position: relative;
   display: inline-block;
 
@@ -79,7 +79,7 @@ a {
   padding: 20px 32px;
   position: relative;
   display: inline-block;
-  transition: all 0.3s ease, top none;
+  transition: all 0.3s ease, top linear;
 
   &:before {
     content: '';
