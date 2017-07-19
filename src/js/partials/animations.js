@@ -17,9 +17,9 @@ $(document).ready(function() {
 	$('.main-head-btn').css('animation', 'Under 1s ease 1.5s forwards');
 
 	if ($(window).width() > 900) {
-		$.getScript('../js/skrollr.min.js', function(data, textStatus) {
+		if ($('.blog-article-main').length) {
 			var s = skrollr.init();
-		});
+		}
 
 		$(window).scroll(function(event) {
 			var top = $(this).scrollTop();

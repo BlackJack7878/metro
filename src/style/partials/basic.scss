@@ -31,6 +31,11 @@ a {
 
 // styles that were used many time on page
 
+.clearfix {
+  display: block;
+  clear: both;
+}
+
 .content {
 	max-width: 1200px;
 	margin: auto;

@@ -1,6 +1,6 @@
-@import url(../../bower_components/normalize.css/normalize.css);
-@import url(../../bower_components/unslider/dist/css/unslider.css);
-@import url(../../bower_components/unslider/dist/css/unslider-dots.css);
+@import url(normalize.css);
+@import url(unslider.css);
+@import url(unslider-dots.css);
 .bold {
   font-weight: 700; }
 
@@ -19,6 +19,10 @@ ul, li, body, a, img {
 a {
   text-decoration: none;
   color: inherit; }
+
+.clearfix {
+  display: block;
+  clear: both; }
 
 .content {
   max-width: 1200px;
@@ -1850,3 +1854,313 @@ a {
   .blog-list-head {
     font-size: 13px;
     line-height: 25px; } }
+
+body {
+  height: auto !important; }
+
+.blog-head {
+  height: 350px;
+  position: relative; }
+  .blog-head-overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 50; }
+  .blog-head .unslider-nav {
+    display: none; }
+  .blog-head-slider-single {
+    overflow: hidden;
+    position: relative;
+    height: 350px; }
+    .blog-head-slider-single img {
+      min-height: 100%;
+      height: 100%;
+      min-width: 100%;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+      display: block; }
+
+.blog-tags-wrapper {
+  float: right;
+  background-color: white;
+  position: relative;
+  top: -50px;
+  z-index: 60;
+  padding-left: 8px;
+  text-align: left; }
+
+.blog-tags li {
+  display: inline-block; }
+  .blog-tags li a {
+    margin-top: 15px;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    color: #c09b56;
+    border-color: #c09b56;
+    padding: 20px 26px; }
+    .blog-tags li a:before, .blog-tags li a:after {
+      background-color: #c09b56; }
+    .blog-tags li a:hover, .blog-tags li a:focus, .blog-tags li a:active {
+      padding-left: 36px;
+      padding-right: 16px;
+      color: black; }
+      .blog-tags li a:hover:before, .blog-tags li a:focus:before, .blog-tags li a:active:before {
+        width: 100%; }
+    .blog-tags li a .btn-anim-vertical-1,
+    .blog-tags li a .btn-anim-vertical-2,
+    .blog-tags li a .btn-anim-horizontal-1,
+    .blog-tags li a .btn-anim-horizontal-2 {
+      background-color: #c09b56; }
+
+.blog-tags-whitebg {
+  position: relative;
+  width: 100%;
+  z-index: 55; }
+  .blog-tags-whitebg div {
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background-color: white;
+    height: 56px;
+    width: 700px; }
+
+.single-main {
+  max-width: 875px;
+  width: 100%;
+  float: left;
+  text-align: left; }
+  .single-main-date {
+    font-size: 12px;
+    font-family: "Gotham-Book";
+    color: #a2a19f;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .single-main-tags {
+    color: #c09b56;
+    font-size: 16px;
+    font-family: "Gotham-Book";
+    margin-bottom: 12px;
+    margin-top: 6px;
+    float: left; }
+  .single-main-social {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    color: #a3a3a3;
+    font-size: 14px;
+    line-height: 23px;
+    font-family: "Gotham-Bold"; }
+    .single-main-social p {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .single-main-social a {
+      display: inline-block;
+      margin-left: 9px;
+      width: 28px;
+      height: 28px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .single-main-social-facebook {
+      background-image: url("../img/single/facebook.png"); }
+      .single-main-social-facebook:hover, .single-main-social-facebook:active, .single-main-social-facebook:focus {
+        background-image: url("../img/single/facebook-hover.png"); }
+    .single-main-social-in {
+      background-image: url("../img/single/in.png"); }
+      .single-main-social-in:hover, .single-main-social-in:active, .single-main-social-in:focus {
+        background-image: url("../img/single/in-hover.png"); }
+    .single-main-social-mail {
+      background-image: url("../img/single/mail.png"); }
+      .single-main-social-mail:hover, .single-main-social-mail:active, .single-main-social-mail:focus {
+        background-image: url("../img/single/mail-hover.png"); }
+  .single-main-social-bottom {
+    float: left;
+    margin-top: 20px; }
+  .single-main-head {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Gotham-Bold"; }
+  .single-main p strong {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Gotham-Bold"; }
+  .single-main h4 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #c09b56;
+    font-family: "Gotham-Bold";
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  .single-main-text {
+    font-family: "Gotham-Light";
+    font-size: 16px;
+    line-height: 30px; }
+  .single-main-banner {
+    width: 100%;
+    height: 150px;
+    background-color: #ebe9e9;
+    margin-top: 25px; }
+  .single-main-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 575px; }
+    .single-main-image img {
+      min-height: 100%;
+      height: 100%;
+      min-width: 100%;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+      display: block; }
+
+.single-sidebar {
+  float: right;
+  max-width: 300px;
+  width: 100%; }
+  .single-sidebar-banner {
+    width: 100%;
+    height: 400px;
+    background-color: #ebe9e9;
+    margin-bottom: 50px;
+    position: relative; }
+  .single-sidebar-head {
+    font-size: 30px;
+    font-family: "Gotham-Bold";
+    text-align: right;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    position: relative; }
+  .single-sidebar-item {
+    margin-top: -10px; }
+    .single-sidebar-item:nth-child(2) {
+      margin-top: 0; }
+    .single-sidebar-item-image {
+      position: relative;
+      overflow: hidden;
+      max-width: 276px;
+      width: 100%;
+      height: 160px;
+      z-index: 10; }
+      .single-sidebar-item-image img {
+        min-height: 100%;
+        height: 100%;
+        min-width: 100%;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        display: block; }
+    .single-sidebar-item-block {
+      background-color: #f4f4f4;
+      padding: 10px 15px;
+      text-align: left;
+      z-index: 20;
+      position: relative;
+      top: -50px;
+      margin-left: 25px; }
+    .single-sidebar-item-name {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "Gotham-Bold";
+      margin-top: 0;
+      margin-bottom: 0; }
+    .single-sidebar-item-date {
+      font-size: 12px;
+      line-height: 23px;
+      color: #c09b56;
+      font-family: "Gotham-Book";
+      margin-top: 5px;
+      margin-bottom: 0; }
+
+.single-row {
+  margin-top: 50px; }
+  .single-row .btn-anim {
+    color: black;
+    border-color: black;
+    text-transform: uppercase; }
+    .single-row .btn-anim:before, .single-row .btn-anim:after {
+      background-color: black; }
+    .single-row .btn-anim:hover, .single-row .btn-anim:focus, .single-row .btn-anim:active {
+      color: white; }
+    .single-row .btn-anim .btn-anim-vertical-1,
+    .single-row .btn-anim .btn-anim-vertical-2,
+    .single-row .btn-anim .btn-anim-horizontal-1,
+    .single-row .btn-anim .btn-anim-horizontal-2 {
+      background-color: black; }
+  .single-row-banner {
+    height: 300px;
+    width: 100%;
+    background-color: #ebe9e9;
+    margin-bottom: 70px; }
+
+@media (max-width: 1220px) {
+  .single-main {
+    max-width: none; }
+  .single-sidebar {
+    max-width: none;
+    width: 100%; }
+    .single-sidebar-head {
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .single-sidebar-item {
+      display: inline-block;
+      max-width: 310px;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 0; }
+  .single-row-more {
+    margin-top: 0; } }
+
+@media (max-width: 900px) {
+  .blog-info-tags .btn-anim {
+    border: 1px solid; }
+  .single-main-tags {
+    float: none; }
+  .single-main-social {
+    float: none;
+    justify-content: flex-start; }
+  .single-main-image {
+    margin-top: 20px; }
+  .single-sidebar-item {
+    display: inline-block;
+    max-width: 310px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0; } }
+
+@media (max-width: 650px) {
+  .blog-info-tags .btn-anim {
+    font-size: 12px;
+    padding: 5px 8px; }
+  .single-main-head {
+    font-size: 21px;
+    line-height: 30px; }
+  .single-main p strong {
+    font-size: 15px;
+    line-height: 20px; }
+  .single-main-text {
+    font-size: 14px;
+    line-height: 18px; }
+  .single-main p {
+    text-align: justify; }
+  .single-main h4 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .single-sidebar-head {
+    font-size: 22px;
+    line-height: 30px; }
+  .single-sidebar-item-name {
+    font-size: 15px;
+    line-height: 20px; }
+  .single-sidebar-item-date {
+    font-size: 11px; } }

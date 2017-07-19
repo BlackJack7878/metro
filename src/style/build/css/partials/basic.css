@@ -6,6 +6,7 @@
 
 body {
   min-width: 300px;
+  height: auto;
   letter-spacing: 0.25px; }
 
 ul, li, body, a, img {
@@ -16,6 +17,10 @@ ul, li, body, a, img {
 a {
   text-decoration: none;
   color: inherit; }
+
+.clearfix {
+  display: block;
+  clear: both; }
 
 .content {
   max-width: 1200px;

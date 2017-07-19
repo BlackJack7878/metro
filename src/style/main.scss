@@ -1,6 +1,6 @@
-@import "../../bower_components/normalize.css/normalize.css";
-@import "../../bower_components/unslider/dist/css/unslider.css";
-@import "../../bower_components/unslider/dist/css/unslider-dots.css";
+@import "normalize.css";
+@import "unslider.css";
+@import "unslider-dots.css";
 // @import "../../bower_components/smooth-scrollbar/dist/smooth-scrollbar.css";
 
 @import "partials/basic.scss";
@@ -8,3 +8,4 @@
 @import "partials/footer.scss";
 @import "partials/home.scss";
 @import "partials/blog.scss";
+@import "partials/single.scss";
