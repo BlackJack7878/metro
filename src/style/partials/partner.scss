@@ -1,0 +1,211 @@
+.partner {
+	padding-bottom: 50px;
+
+	h1 {
+		font-size: 22px;
+		line-height: 35px;
+		font-family: $GothamBold;
+		text-align: left;
+	}
+
+	&-row {
+		margin-top: 50px;
+
+		&::after {
+			display: block;
+			content: '';
+			visibility: hidden;
+			clear: both;
+		}
+	}
+
+	&-col {
+		width: 50%;
+	}
+
+	&-left {
+		float: left;
+		position: relative;
+
+		.svg-quote {
+			position: absolute;
+			top: 20px;
+			left: -40px;
+			width: 96px;
+			height: auto;
+		}
+
+		.partner-quote-text {
+			padding-right: 70px;
+		}
+	}
+
+	&-right {
+		float: right;
+		position: relative;
+
+		.svg-quote {
+			position: absolute;
+			top: 20px;
+			right: -40px;
+			width: 96px;
+			height: auto;
+		}
+
+		.partner-quote-text {
+			padding-left: 70px;
+		}
+	}
+
+	p {
+		text-align: left;
+	}
+
+	.blog-info-tags .btn-anim {
+
+		&:hover {
+			color: white;
+			padding-left: 26px;
+			padding-right: 26px;
+		}
+	}
+
+	&-quote-text {
+		font-size: 18px;
+		line-height: 35px;
+		font-family: $GothamBookItalic;
+		color: $gold;
+		margin-top: 40px;
+		z-index: 1;
+		position: relative;
+	}
+
+	&-block-text {
+		margin-top: 0;
+		font-size: 18px;
+		line-height: 35px;
+		font-family: $GothamLight;
+		padding: 30px 25px 10px 25px;
+		background-color: #f7f7f7;
+		min-height: 250px;
+		z-index: 2;
+		position: relative;
+
+		strong {
+			font-family: $GothamBold;
+		}
+	}
+
+}
+
+@media (max-width: 1400px) {
+	.footer-up {
+		right: 20px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.partner {
+		&-left {
+			.svg-quote {
+				left: 0;
+			}
+		}
+
+		&-right {
+			.svg-quote {
+				right: 0;
+			}
+		}
+
+	}
+
+}
+
+@media (max-width: 800px) {
+	.partner {
+		h1 {
+			font-size: 18px;
+			line-height: 28px;
+			width: 100%;
+		}
+
+		&-col {
+			width: 100%;
+		}
+
+		&-row {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+
+			&:nth-child(2n+1) {
+				.partner-right {
+					order: 1;
+				}
+				.partner-left {
+					order: 2;
+				}
+			}
+		}
+
+		&-right {
+			float: none;
+
+			.partner-quote-text {
+				padding-left: 0;
+			}
+		}
+
+		&-left {
+			float: none;
+
+			.partner-quote-text {
+				padding-right: 0;
+			}
+		}
+
+		&-block-text {
+			min-height: auto;
+		}
+
+	}
+}
+
+@media (max-width: 500px) {
+	.partner {
+		h1 {
+			font-size: 16px;
+			line-height: 25px;
+		}
+
+		&-row {
+			margin-top: 20px;
+		}
+
+		&-col {
+
+			img {
+				width: 100px;
+				height: auto;
+			}
+
+			.svg-quote {
+				width: 50px;
+				top: 50px;
+			}
+
+		}
+
+		&-block-text {
+			font-size: 14px;
+			line-height: 24px;
+			padding: 20px;
+		}
+
+		&-quote-text {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}

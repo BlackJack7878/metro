@@ -1,0 +1,298 @@
+.contact {
+
+	&-loc {
+		padding-bottom: 85px;
+	}
+
+	.footer-wrapper-2 p {
+		text-align: left;
+		color: white;
+		font-size: 16px;
+		line-height: 27px;
+		font-family: $GothamLight;
+	}
+
+	#map {
+		max-width: 745px;
+		width: 100%;
+		height: 536px;
+		background-color: gray;
+	}
+
+	&-row {
+
+		h2 {
+			text-align: left;
+			font-size: 22px;
+			line-height: 35px;
+			font-family: $GothamBold;
+			margin-bottom: 28px;
+			margin-top: 50px;
+		}
+
+		.contact-mail {
+			display: inline-block;
+			margin: auto;
+			text-align: center;
+			color: black;
+			text-decoration: underline;
+			font-family: $GothamLight;
+			font-size: 22px;
+			margin-top: 45px;
+			padding-left: 40px;
+			padding-right: 40px;
+			background-image: url('../img/contact/contact-icon.png');
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+
+		&::after {
+			display: block;
+			visibility: hidden;
+			content: '';
+			clear: both;
+		}
+
+	}
+
+	&-col {
+
+		&-left {
+			width: 62%;
+			float: left;
+			position: relative;
+		}
+
+		&-right {
+			width: 38%;
+			float: right;
+			position: relative;
+			display: none;
+		}
+
+	}
+
+	#contact-loc-1 {
+		display: block;
+	}
+
+	&-main-list {
+		position: relative;
+		font-size: 22px;
+		line-height: 35px;
+		font-family: $GothamBook;
+		text-align: left;
+		padding-left: 45px;
+	}
+
+	h1 {
+		text-align: left;
+		position: relative;
+		left: -77px;
+		font-size: 50px;
+		line-height: 68px;
+		font-family: $GothamBold;
+	}
+
+	&-svg {
+		position: absolute;
+		right: -60px;
+		width: 130px;
+	}
+
+	&-image {
+		overflow: hidden;
+		position: relative;
+		height: 343px;
+		width: 530px;
+		left: -77px;
+
+		& img {
+			min-height: 100%;
+			height: 100%;
+			min-width: 100%;
+			position: absolute;
+			right: 50%;
+			top: 50%;
+			transform: translate(50%, -50%);
+			display: block;
+		}
+
+	}
+
+	&-address {
+		width: 48%;
+		display: inline-block;
+		margin-top: 50px;
+
+		&::after {
+			display: block;
+			content: '';
+			visibility: hidden;
+			clear: both;
+		}
+
+		&-city {
+			float: left;
+			text-align: left;
+			margin-right: 45px;
+			font-size: 22px;
+			line-height: 35px;
+			font-family: $GothamBold;
+			max-width: 150px;
+			text-transform: uppercase;
+			margin-left: 60px;
+		}
+
+		&-info {
+			float: left;
+			text-align: left;
+			font-family: $GothamLight;
+			font-size: 22px;
+			line-height: 35px;
+		}
+
+	}
+
+}
+
+@media (max-width: 1400px) {
+	.contact-svg {
+		right: 10px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.contact {
+		
+		#map {
+			max-width: none;
+		}
+
+		&-col {
+			&-left {
+				width: 100%;
+			}
+			&-right {
+				width: 100%;
+			}
+		}
+
+		h1 {
+			left: 0;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&-svg {
+			width: 90px;
+			top: 60px;
+		}
+
+		&-main-list {
+			padding-left: 0;
+
+			li {
+				width: 100%;
+				max-width: 260px;
+				margin: auto;
+			}
+
+		}
+
+		&-image {
+			left: 0;
+			display: inline-block;
+			margin: auto;
+			margin-top: 20px;
+		}
+	}
+}
+
+@media (max-width: 1050px) {
+	.contact-address {
+		text-align: center;
+
+		&-city, &-info {
+			text-align: center;
+			float: none;
+		}
+
+		&-city, ul {
+			margin: auto;
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.contact {
+
+		&-loc {
+			padding-bottom: 40px;
+		}
+
+		.footer-wrapper-2 p {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		&-row {
+
+			h2 {
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+
+			.contact-mail {
+				font-size: 14px;
+				margin-top: 20px;
+				padding-left: 0;
+				padding-right: 0;
+				background-image: none;
+			}
+
+		}
+
+		&-main-list {
+			font-size: 16px;
+			line-height: 26px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 30px;
+			line-height: 48px;
+		}
+
+		&-svg {
+			width: 60px;
+			top: 150px;
+			right: -10px;
+			z-index: 2;
+		}
+
+		&-image {
+			width: 100%;
+			max-width: 600px;
+			z-index: 1;
+		}
+
+		&-address {
+			width: 100%;
+			margin-top: 25px;
+
+			&-city {
+				font-size: 16px;
+				line-height: 26px;
+			}
+
+			&-info {
+				font-size: 16px;
+				line-height: 26px;
+			}
+
+		}
+
+	}
+}

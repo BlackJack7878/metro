@@ -9,3 +9,7 @@
 //= partials/home.js
 //= partials/blog.js
 //= partials/single.js
+//= partials/investitions.js
+//= partials/partner.js
+//= partials/contact.js
+//= partials/oferta.js

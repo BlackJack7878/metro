@@ -6,7 +6,6 @@
 
 body {
   min-width: 300px;
-  height: auto;
   letter-spacing: 0.25px; }
 
 ul, li, body, a, img {
@@ -17,6 +16,9 @@ ul, li, body, a, img {
 a {
   text-decoration: none;
   color: inherit; }
+
+.footer {
+  z-index: 30; }
 
 .clearfix {
   display: block;
@@ -231,3 +233,7 @@ a {
 @font-face {
   font-family: Gotham-Book;
   src: local("Gotham-Book"), url(../fonts/Gotham-Book.otf); }
+
+@font-face {
+  font-family: Gotham-BookItalic;
+  src: local("Gotham-BookItalic"), url(../fonts/Gotham-BookItalic.otf); }

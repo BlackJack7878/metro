@@ -2,6 +2,7 @@
 $GothamLight: 'Gotham-Light';
 $GothamBold: 'Gotham-Bold';
 $GothamBook: 'Gotham-Book';
+$GothamBookItalic: 'Gotham-BookItalic';
 $gold: #c09b56;
 
 .bold {
@@ -13,9 +14,9 @@ $gold: #c09b56;
 }
 
 body {
-	min-width: 300px;
+  min-width: 300px;
   // overflow-y: hidden;
-	letter-spacing: 0.25px;
+  letter-spacing: 0.25px;
 }
 
 ul, li, body, a, img {
@@ -27,6 +28,10 @@ ul, li, body, a, img {
 a {
 	text-decoration: none;
   color: inherit;
+}
+
+.footer {
+  z-index: 30;
 }
 
 // styles that were used many time on page
@@ -323,4 +328,9 @@ a {
     font-family: Gotham-Book; 
     src: local("Gotham-Book"),
     url(../fonts/Gotham-Book.otf);
+}
+@font-face {
+    font-family: Gotham-BookItalic; 
+    src: local("Gotham-BookItalic"),
+    url(../fonts/Gotham-BookItalic.otf);
 }

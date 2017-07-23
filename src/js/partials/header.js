@@ -108,7 +108,7 @@ $(document).ready(function() {
 				$('.header-menu-btn-bar').css('background-color', '#c09b56');
 			}
 
-			if ($('.header-contact-us').length) {
+			if ($('.header-contact-btn').css('display') != 'none') {
 				$('.header-contact-us, .header-contact-search, .header-contact-client')
 				.css('display', 'none');
 			}
@@ -121,7 +121,7 @@ $(document).ready(function() {
 				$('.header-menu-btn').css('background-color', 'white');
 				$('.header-menu-btn-bar').css('background-color', 'black');
 
-				if ($('.header-contact-us').length) {
+				if ($('.header-contact-btn').css('display') != 'none') {
 					$('.header-contact-us').css('display', 'block');
 					$('.header-contact-search, .header-contact-client').css('display', 'flex');
 				}
