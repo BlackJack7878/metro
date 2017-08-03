@@ -13,3 +13,7 @@
 //= partials/partner.js
 //= partials/contact.js
 //= partials/oferta.js
+//= partials/firma.js
+//= partials/zespol.js
+//= partials/footer-kariera.js
+//= partials/kariera-oglos.js

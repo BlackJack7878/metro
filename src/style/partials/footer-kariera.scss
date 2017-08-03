@@ -1,0 +1,149 @@
+.kariera .footer {
+
+	.footer-linked-in {
+		background-image: url('../img/kariera/footer-in.png');
+		background-position: 90px center;
+		background-repeat: no-repeat;
+
+		&:focus {
+			background-image: none;
+		}
+	}
+
+	&-form {
+
+		&-head {
+			text-align: left;
+			font-size: 22px;
+			line-height: 31px;
+			margin-bottom: 10px;
+		}
+
+		&-head-kariera {
+			color: white;
+			text-align: left;
+			font-family: $GothamLight;
+			font-size: 18px;
+			line-height: 31px;
+			margin-top: 0;
+		}
+
+		&-row-file {
+
+			.footer-file-wrapper {
+				max-width: 330px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+			}
+
+			.footer-file-name {
+				padding-top: 23px;
+				max-width: 130px;
+				font-size: 10px;
+				line-height: 14px;
+				color: white;
+				font-family: $GothamLight;
+				display: inline-block;
+			}
+
+			.footer-file-name-wrap {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.footer-file-delete {
+				width: 19px;
+				height: 24px;
+				background-image: url('../img/kariera/footer-trash.png');
+				background-position: center;
+				background-repeat: no-repeat;
+				position: relative;
+				top: 12px;
+				margin-right: 10px;
+				cursor: pointer;
+				display: none;
+			}
+
+			label {
+				position: relative;
+				display: inline-block;
+				color: $gold;
+				font-size: 14px;
+				font-family: $GothamLight;
+				border: 1px solid $gold;
+				padding: 12px 12px 12px 30px;
+				margin-top: 26px;
+				background-image: url('../img/kariera/footer-add.png');
+				background-repeat: no-repeat;
+				background-position: 5px center;
+				transition: all 0.3s ease;
+
+				&:hover {
+					background-color: $gold;
+					color: white;
+					cursor: pointer;
+					background-image: url('../img/kariera/footer-add-hover.png');
+				}
+			}
+
+			span {}
+
+			input {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				visibility: hidden;
+			}
+		}
+
+		button {
+			position: relative;
+			top: -100px;
+		}
+
+	}
+
+}
+
+@media (max-width: 770px) {
+	.kariera .footer {
+
+		&-form {
+
+			button {
+				top: 0;
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 430px) {
+	.kariera .footer {
+
+		&-form {
+
+			.footer-file-wrapper {
+				flex-direction: column;
+			}
+
+			&-head {
+				font-size: 18px;
+				line-height: 26px;
+			}
+
+			&-head-kariera {
+				font-size: 16px;
+				line-height: 24px;
+			}
+
+		}
+
+	}
+}

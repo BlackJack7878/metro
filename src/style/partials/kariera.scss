@@ -1,0 +1,420 @@
+.kariera {
+
+	&-svg-a {
+		width: 120px;
+		right: -60px;
+		top: 10px;
+		position: absolute;
+	}
+
+	.content {
+		position: relative;
+	}
+
+	h2 {
+		text-align: left;
+		font-size: 22px;
+		line-height: 35px;
+		font-family: $GothamBold;
+		margin-top: 40px;
+	}
+
+	&-row {
+
+		&:after {
+			display: block;
+			visibility: hidden;
+			clear: both;
+			content: '';
+		}
+	}
+
+	&-col {
+		margin-top: 30px;
+		display: inline-block;
+		width: 49%;
+		text-align: left;
+		float: left;
+
+		&-light {
+			font-size: 18px;
+			line-height: 29px;
+			font-family: $GothamLight;
+			margin-top: 30px;
+			margin-bottom: 0;
+		}
+
+		&-bold {
+			font-family: $GothamBold;
+			font-size: 22px;
+			line-height: 29px;
+			margin-top: 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+	}
+
+	&-member {
+		display: inline-block;
+		width: 100%;
+		max-width: 170px;
+		float: left;
+		text-align: center;
+		margin: 0 10px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&-image {
+			display: inline-block;
+			margin: auto;
+			overflow: hidden;
+			position: relative;
+			height: 130px;
+			width: 130px;
+			z-index: 1;
+			border-radius: 50%;
+
+			& img {
+				min-height: 100%;
+				height: 100%;
+				min-width: 100%;
+				position: absolute;
+				right: 50%;
+				top: 50%;
+				transform: translate(50%, -50%);
+				display: block;
+			}
+		}
+
+		h4 {
+			font-size: 12px;
+			line-height: 15px;
+			font-family: $GothamLight;
+			color: #585857;
+		}
+
+		h3 {
+			font-size: 14px;
+			line-height: 20px;
+			color: $gold;
+			font-family: $GothamBold;
+		}
+
+	}
+
+	&-zespol {
+		background-color: $gold;
+		text-align: center;
+		z-index: 1;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		margin-top: 40px;
+
+		h2 {
+			margin-top: 0;
+			color: white;
+			font-size: 30px;
+			line-height: 37px;
+			font-family: $GothamLight;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		.btn-anim {
+			color: white;
+			border-color: white;
+			z-index: 2;
+
+			&:before, &:after {
+				background-color: $gold;
+			}
+
+			&:hover, &:focus, &:active {
+				color: $gold;
+
+				&:before {
+					background-color: white;
+					z-index: -1;
+					width: 100%;
+				}
+
+			}
+
+			.btn-anim-vertical-1,
+			.btn-anim-vertical-2,
+			.btn-anim-horizontal-1,
+			.btn-anim-horizontal-2 {
+				background-color: white;
+			}
+		}
+
+	}
+}
+
+.kariera-actual {
+	padding-top: 55px;
+	padding-bottom: 75px;
+
+	h1 {
+		font-size: 50px;
+		line-height: 44px;
+		font-family: $GothamBold;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		margin-top: 0;
+		z-index: 5;
+		position: relative;
+	}
+
+	h2 {
+		font-size: 29px;
+		line-height: 44px;
+		font-family: $GothamBold;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		z-index: 5;
+		position: relative;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	&-tab {
+		border: 1px solid $gold;
+		max-width: 300px;
+		margin-top: 60px;
+		padding: 30px 30px 25px 30px;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		display: inline-block;
+
+		h5 {
+			margin: 0;
+			font-size: 16px;
+			line-height: 29px;
+			font-family: $GothamBold;
+			text-transform: uppercase;
+		}
+
+		h6 {
+			font-family: $GothamBold;
+			font-size: 13px;
+			line-height: 29px;
+			margin: 15px 0;
+		}
+
+		&-city {
+			margin: 0;
+		}
+
+		&-date {
+			margin: 0;
+		}
+
+		&-city, &-date {
+			font-size: 13px;
+			line-height: 16px;
+			font-family: $GothamBook;
+		}
+
+		&-overlay {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			bottom: -100%;
+			z-index: 2;
+			background-color: #242f3a;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.4s ease-out;
+
+			h5 {
+				font-family: $GothamBold;
+				color: $gold;
+				text-transform: uppercase;
+				font-size: 16px;
+				line-height: 29px;
+				transition: all 0.75s ease-out;
+				position: relative;
+				top: 300px;
+			}
+
+		}
+
+		&:hover &-overlay, &:active &-overlay {
+			top: 0;
+			bottom: 0;
+
+			h5 {
+				top: 0;
+			}
+		}
+
+	}
+
+}
+
+@media (max-width: 1400px) {
+	.kariera-svg-a {
+		right: 10px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.kariera {
+
+		&-member {
+			float: none;
+			max-width: 200px;
+
+			&:first-child {
+				margin-left: 10px;
+			} 
+		}
+
+		&-col {
+
+			&:first-child {
+				text-align: center;
+			}
+
+			width: 100%;
+		}
+
+		&-actual {
+
+			&-tab {
+				padding: 20px 10px;
+
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 770px) {
+	.kariera {
+
+		&-svg-a {
+			width: 70px;
+			top: -30px;
+			right: 10px;
+		}
+		
+		&-zespol {
+
+			.btn-anim {
+				border: 1px solid white;
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 700px) {
+	.kariera {
+
+		h2 {
+			margin-top: 20px;
+			font-size: 18px;
+			line-height: 26px;
+
+			& br {
+				display: block;
+			}
+		}
+
+		&-member {
+			margin-top: 10px;
+			max-width: 450px;
+		}
+
+		&-col {
+
+			&-bold {
+				font-size: 17px;
+				line-height: 24px;
+			}
+
+			&-light {
+				font-size: 16px;
+				line-height: 22px;
+				margin-top: 15px;
+			}
+
+		}
+
+		&-actual {
+
+			&-wrapper {
+				justify-content: center;
+				flex-direction: column;
+			}
+
+		}
+
+		h1 {
+			font-size: 40px;
+			line-height: 44px;
+		}
+
+	}
+}
+
+@media (max-width: 430px) {
+	.kariera {
+
+		&-member {
+			margin: 0;
+			margin-left: 0 !important;
+			margin-top: 10px;
+		}
+
+		&-svg-a {
+			width: 70px;
+			right: auto;
+			top: -50px;
+			left: 10px;
+			z-index: 10;
+		}
+
+		&-actual {
+
+			&-tab {
+				margin-top: 30px;
+
+				h5 {
+					font-size: 15px;
+					line-height: 25px;
+				}
+
+				h6 {
+					font-size: 13px;
+					line-height: 25px;
+				}
+
+				p {
+					font-size: 12px;
+					line-height: 14px;
+				}
+			}
+
+		}
+
+	}
+}

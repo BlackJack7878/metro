@@ -1,0 +1,740 @@
+.blog-head {
+	height: 350px;
+	position: relative;
+
+	&-overlay {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.7);
+		z-index: 50;
+	}
+
+	.unslider-nav {
+		display: none;
+	}
+
+	&-slider {
+
+		&-single {
+			overflow: hidden;
+			position: relative;
+			height: 350px;
+
+			& img {
+				min-height: 100%;
+				height: 100%;
+				min-width: 100%;
+				position: absolute;
+				right: 50%;
+				top: 50%;
+				transform: translate(50%, -50%);
+				display: block;
+			}
+
+		}
+
+	}
+}
+
+.blog-tags {
+
+	&-wrapper {
+		float: right;
+		background-color: white;
+		position: relative;
+		top: -50px;
+		z-index: 60;
+		padding-left: 8px;
+		text-align: left;
+	}
+
+	li {
+		display: inline-block;
+
+		a {
+			margin-top: 15px;
+			margin-right: 8px;
+			margin-left: 8px;
+			text-transform: uppercase;
+			color: $gold;
+			border-color: $gold;
+			padding: 20px 26px;
+			&:before, &:after {
+				background-color: $gold;
+			}
+
+			&:hover, &:focus, &:active {
+				padding-left: 26px;
+				padding-right: 26px;
+				color: white;
+
+				&:before {
+					width: 100%;
+				}
+
+			}
+
+			.btn-anim-vertical-1,
+			.btn-anim-vertical-2,
+			.btn-anim-horizontal-1,
+			.btn-anim-horizontal-2 {
+				background-color: $gold;
+			}
+		}
+	}
+
+}
+
+.blog-tags-whitebg {
+	position: relative;
+	width: 100%;
+	z-index: 55;
+
+	div {
+		position: absolute;
+		right: 0;
+		top: -50px;
+		background-color: white;
+		height: 56px;
+		width: 700px;
+	}
+}
+
+.firma-personal {
+	background-color: #f7f7f7;
+	padding-bottom: 60px;
+
+	.firma-col {
+		text-align: right;
+	}
+
+	h2 {
+		font-size: 50px;
+		line-height: 68px;
+		font-family: $GothamBold;
+		text-align: center;
+		position: relative;
+	}
+
+
+	&-image-person {
+		position: absolute;
+		left: 10px;
+		top: 0;
+		max-width: 300px;
+		width: 100%;
+		overflow: hidden;
+		height: 336px;
+		z-index: 2;
+
+		& img {
+			min-height: 100%;
+			height: 100%;
+			min-width: 100%;
+			position: absolute;
+			right: 50%;
+			top: 50%;
+			transform: translate(50%, -50%);
+			display: block;
+		}
+
+	}
+
+	&-person-block {
+		background-color: white;
+		position: relative;
+		top: 30px;
+		text-align: left;
+		max-width: 275px;
+		width: 100%;
+		float: right;
+		padding: 10px 5px 40px 5px;
+		z-index: 1;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: -120px;
+			right: 0;
+			z-index: -1;
+			background-color: white;
+		}
+	}
+
+	h3 {
+		font-size: 30px;
+		line-height: 36px;
+		font-family: $GothamBold;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 10px;
+	}
+
+	h4 {
+		font-size: 18px;
+		line-height: 24px;
+		color: $gold;
+		font-family: $GothamMedium;
+		margin-top: 8px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 26px;
+		font-family: $GothamLight;
+		text-align: left;
+		padding-left: 10px;
+	}
+
+
+
+	&-person-mob {
+		position: fixed;
+		display: none;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1500;
+		background-color: #242f3a;
+		padding: 40px 80px;
+
+		&-close {
+			width: 32px;
+			height: 32px;
+			position: relative;
+			cursor: pointer;
+			transition: all 0.4s ease;
+
+			&:hover {
+				transform: rotate(90deg);
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: $gold;
+				transform: rotate(45deg);
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: $gold;
+				transform: rotate(-45deg);
+			}
+		}
+
+		h3 {
+			color: white;
+			font-size: 30px;
+			line-height: 36px;
+			font-family: $GothamBold;
+		}
+
+		h4 {
+			color: $gold;
+			font-size: 18px;
+			line-height: 24px;
+			font-family: $GothamMedium;
+		}
+
+		p {
+			color: white;
+			font-size: 16px;
+			line-height: 35px;
+			font-family: $GothamLight;
+		}
+
+	}
+
+}
+
+.zespol {
+
+	&-head {
+		p {
+			clear: both;
+			font-size: 22px;
+			line-height: 35px;
+			font-family: $GothamBold;
+			text-align: left;
+			margin-top: 50px;
+		}
+	}
+
+	&-rada .content, &-team .content {
+		position: relative;
+	}
+
+	&-svg-r {
+		position: absolute;
+		width: 130px;
+		top: 0;
+		right: -60px;
+		z-index: 5;
+	}
+
+	&-svg-z {
+		position: absolute;
+		width: 130px;
+		top: 0;
+		left: -60px;
+		z-index: 5;
+	}
+
+	&-person-mobtext {
+		display: none;
+	}
+	
+	h2 {
+		font-size: 50px;
+		font-family: $GothamBold;
+		line-height: 68px;
+		position: relative;
+	}
+
+	&-row {
+		&:after {
+			display: block;
+			content: '';
+			visibility: hidden;
+			clear: both;
+		}
+	}
+
+	&-rada {
+		.zespol-col:nth-child(2) {
+			margin-left: 4%;
+			margin-right: 4%;
+			margin-bottom: 20px;
+		}
+	}
+
+	&-col {
+		display: inline-block;
+		width: 30%;
+		height: 380px;
+		float: left;
+		margin-bottom: 50px;
+	}
+
+	&-col-middle {
+		margin-top: 30px;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-bottom: 0;
+
+		.zespol-person {
+			transform: translateY(-30px);
+		} 
+	}
+	
+	&-person {
+		position: relative;
+
+		&:hover &-layout {
+			opacity: 1;
+			top: 0;
+		}
+
+		&-image {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			height: 380px;
+			z-index: 2;
+
+			& img {
+				min-height: 100%;
+				height: 100%;
+				min-width: 100%;
+				position: absolute;
+				right: 50%;
+				top: 50%;
+				transform: translate(50%, -50%);
+				display: block;
+			}
+
+		}
+
+		&-layout {
+			transition: all 0.5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(36, 47, 58, 0.7);
+			z-index: 3;
+			text-align: left;
+			color: white;
+			padding: 0 20px;
+			overflow: hidden;
+
+			h3 {
+				font-family: $GothamBold;
+				font-size: 30px;
+				line-height: 38px;
+				margin-bottom: 12px;
+			}
+
+			h4 {
+				font-family: $GothamBold;
+				font-size: 16px;
+				line-height: 26px;
+				margin: 12px 0;
+			}
+
+			p {
+				font-family: $GothamLight;
+				font-size: 14px;
+				line-height: 26px;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 1400px) {
+	.zespol {
+		&-svg-r {
+			width: 130px;
+			top: 0;
+			right: 10px;
+		}
+
+		&-svg-z {
+			width: 130px;
+			top: 0;
+			left: 10px;
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+	.firma {
+
+		&-personal {
+			.firma-col {
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		&-image-person {
+			position: relative;
+			margin: auto;
+		}
+
+		&-person-block {
+			float: none;
+			margin: auto;
+			top: -50px;
+			padding-top: 60px;
+			max-width: 460px;
+
+			&:before {
+				left: -20px;
+			}
+		}
+	}
+
+	.zespol {
+
+		&-middle {
+
+			.zespol-person {
+				transform: translateY(-30px);
+			}
+			
+		}
+
+	}
+}
+
+@media (max-width: 900px) {
+	.blog-info-tags {
+
+		.btn-anim {
+			border: 1px solid;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+
+	.zespol {
+
+		&-rada {
+			.zespol-col:nth-child(2) {
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&-row {
+			text-align: center;
+		}
+
+		&-col {
+			display: inline-block;
+			width: 45%;
+			height: 380px;
+			float: none;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+
+		&-col-middle {
+			margin-top: 0px;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.zespol {
+		h2 {
+			font-size: 34px;
+			line-height: 40px;
+		}
+	}
+
+	.firma {
+
+		&-row {
+			margin-top: 50px;
+		}
+
+		&-col {
+			width: 100%;
+		}
+
+		&-personal {
+
+			h2 {
+				font-size: 34px;
+				line-height: 40px;
+				text-align: left;
+				position: relative;
+				top: -20px;
+			}
+		}
+
+		&-image-person {
+			left: 0;
+		}
+
+		&-person-block {
+			background-color: transparent;
+			position: relative;
+			top: 30px;
+			float: none;
+			padding: 10px 5px 40px 5px;
+
+			&:before {
+				display: none;
+			}
+
+			h3 {
+				font-size: 30px;
+				line-height: 29px;
+			}
+
+			h4 {
+				font-size: 18px;
+				line-height: 29px;
+			}
+
+			p {
+				display: none;
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 650px) {
+	.blog-info-tags {
+
+		.btn-anim {
+			font-size: 12px;
+			padding: 5px 8px;
+		}
+	}
+
+	.zespol {
+
+		&-svg-r {
+			width: 60px;
+			top: 28px;
+			right: 10px;
+		}
+
+		&-svg-z {
+			width: 60px;
+			top: 28px;
+			left: 10px;
+		}
+
+		&-head p {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&-person-layout {
+			display: none;
+		}
+
+		&-person-mobtext {
+			display: block;
+			text-align: left;
+
+			h3 {
+				font-size: 30px;
+				line-height: 29px;
+				font-family: $GothamBold;
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+
+			h4 {
+				margin-top: 5px;
+				margin-bottom: 10px;
+				color: $gold;
+				font-size: 18px;
+				line-height: 29px;
+				font-family: $GothamMedium;
+			}
+		}
+
+		&-rada {
+			.zespol-col:nth-child(2) {
+				margin-left: 0px;
+				margin-right: 0px;
+				margin-bottom: 20px;
+				margin-top: 10px;
+			}
+		}
+
+		&-col {
+			width: 100%;
+			max-width: 320px;
+			height: 340px;
+			margin-top: 10px;
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		&-col-middle {
+			margin-top: 10px;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 20px;
+		}
+
+		&-person-image {
+			height: 340px;
+		}
+
+	}
+}
+
+@media (max-width: 430px) {
+	.zespol {
+		h2 {
+			font-size: 26px;
+			line-height: 30px;
+		}
+
+		&-person-mobtext {
+			display: block;
+			text-align: left;
+
+			h3 {
+				font-size: 26px;
+				line-height: 30px;
+			}
+
+			h4 {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.firma {
+
+		&-person-mob {
+			padding: 20px 30px;
+
+			&-close {
+			}
+
+			h3 {
+				font-size: 26px;
+				line-height: 30px;
+			}
+
+			h4 {
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 26px;
+			}
+
+		}
+
+		&-personal {
+			padding-bottom: 0;
+		}
+
+		&-person-block {
+			max-width: 300px;
+			top: 10px;
+
+			h4, h3 {
+				padding-left: 0;
+			}
+
+			h3 {
+				font-size: 25px;
+				line-height: 27px;
+			}
+
+			h4 {
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+
+	}
+}

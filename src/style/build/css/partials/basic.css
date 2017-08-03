@@ -112,6 +112,16 @@ a {
     background-color: white;
     display: block; }
 
+@media (max-width: 770px) {
+  .btn, .btn-anim {
+    font-size: 13px;
+    padding: 14px 20px; } }
+
+@media (max-width: 380px) {
+  .btn, .btn-anim {
+    font-size: 12px;
+    padding: 12px 20px; } }
+
 @keyframes Drop {
   from {
     transform: translateY(-200px);
@@ -237,3 +247,7 @@ a {
 @font-face {
   font-family: Gotham-BookItalic;
   src: local("Gotham-BookItalic"), url(../fonts/Gotham-BookItalic.otf); }
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: local("Gotham-Medium"), url(../fonts/Gotham-Medium.otf); }

@@ -2,6 +2,7 @@
 $GothamLight: 'Gotham-Light';
 $GothamBold: 'Gotham-Bold';
 $GothamBook: 'Gotham-Book';
+$GothamMedium: 'Gotham-Medium';
 $GothamBookItalic: 'Gotham-BookItalic';
 $gold: #c09b56;
 
@@ -45,7 +46,7 @@ a {
 	max-width: 1200px;
 	margin: auto;
   padding: 0 20px;
-	text-align: center;
+  text-align: center;
 }
 
 .btn {
@@ -156,6 +157,16 @@ a {
 
 }
 
+@media (max-width: 770px) {
+  .btn, .btn-anim {
+    font-size: 13px;
+    padding: 14px 20px; }
+  }
+  @media (max-width: 380px) {
+    .btn, .btn-anim {
+      font-size: 12px;
+      padding: 12px 20px; }
+    }
 // Animations
 
 @keyframes Drop {
@@ -315,22 +326,27 @@ a {
 
 
 @font-face {
-    font-family: Gotham-Light; 
-    src: local("Gotham-Light"),
-    url(../fonts/Gotham-Light.otf);
+  font-family: Gotham-Light; 
+  src: local("Gotham-Light"),
+  url(../fonts/Gotham-Light.otf);
 }
 @font-face {
-    font-family: Gotham-Bold; 
-    src: local("Gotham-Bold"),
-    url(../fonts/Gotham-Bold.otf);
+  font-family: Gotham-Bold; 
+  src: local("Gotham-Bold"),
+  url(../fonts/Gotham-Bold.otf);
 }
 @font-face {
-    font-family: Gotham-Book; 
-    src: local("Gotham-Book"),
-    url(../fonts/Gotham-Book.otf);
+  font-family: Gotham-Book; 
+  src: local("Gotham-Book"),
+  url(../fonts/Gotham-Book.otf);
 }
 @font-face {
-    font-family: Gotham-BookItalic; 
-    src: local("Gotham-BookItalic"),
-    url(../fonts/Gotham-BookItalic.otf);
+  font-family: Gotham-BookItalic; 
+  src: local("Gotham-BookItalic"),
+  url(../fonts/Gotham-BookItalic.otf);
+}
+@font-face {
+  font-family: Gotham-Medium; 
+  src: local("Gotham-Medium"),
+  url(../fonts/Gotham-Medium.otf);
 }
