@@ -5,11 +5,10 @@ $(document).ready(function() {
 			autoplay: true,
 			infinite: true,
 			delay: 10000,
-			arrows: false
-			// arrows: {
-			// 	prev: '<a class="unslider-arrow prev"></a>',
-			// 	next: '<a class="unslider-arrow next"></a>',
-			// }
+			arrows: {
+				prev: '<a class="unslider-arrow prev"></a>',
+				next: '<a class="unslider-arrow next"></a>',
+			}
 		});
 		$("#location-gallery-slider").unslider({
 			autoplay: true,
