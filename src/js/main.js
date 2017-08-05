@@ -17,3 +17,4 @@
 //= partials/zespol.js
 //= partials/footer-kariera.js
 //= partials/kariera-oglos.js
+//= partials/location.js
